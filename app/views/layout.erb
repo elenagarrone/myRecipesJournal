@@ -22,8 +22,12 @@
         Welcome, <%= current_user.email %>
       <% end %>
 
-      <% if flash[:notice] %>
-        <div id="notice"><%= flash[:notice] %></div>
+      <% if flash[:errors] && !flash[:errors].empty? %>
+        <ul id="errors">
+          <% flash[:errors].each do |error| %>
+          <li><%= error %></li>
+          <% end %>
+        </ul>
       <% end %>
 
       <%= yield %>
