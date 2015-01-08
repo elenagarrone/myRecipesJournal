@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/partial'
+require_relative 'helpers/app.rb'
 require 'data_mapper'
 require_relative 'datamapper_setup'
 
@@ -10,6 +11,7 @@ set :public_folder, Proc.new { File.join(root, '..', 'public') }
 
 
 get '/' do
+  @recipes = Recipe.all
   erb :index
 end
 
