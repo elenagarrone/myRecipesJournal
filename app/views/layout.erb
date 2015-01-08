@@ -8,32 +8,8 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   </head>
   <body>
-    <header>
-      <a href='recipes/new'>Add Recipe</a>
-
-      <form id="tags" method="get" action="/tags">
-        <input name="search_tags" type="text">
-        <input type="submit" value="Search">
-      </form>
-
-    </header>
-
-      <% if current_user %>
-        Welcome, <%= current_user.email %>
-        <form method="post" action="/sessions">
-          <input type="hidden" name="_method" value="delete">
-          <input type="submit" value="Sign out">
-        </form>
-      <% end %>
-
-      <% if flash[:errors] && !flash[:errors].empty? %>
-        <ul id="errors">
-          <% flash[:errors].each do |error| %>
-          <li><%= error %></li>
-          <% end %>
-        </ul>
-      <% end %>
-
+      <%= partial :header %>
+      <%= partial :flash %>
       <%= yield %>
     <script type="text/javascript" src="./js/interface.js"></script>
   </body>
