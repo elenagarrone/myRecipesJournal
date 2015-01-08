@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative 'helpers/recipe_helper'
 
 feature 'A user sees all the recipes available' do
 
@@ -31,9 +32,21 @@ feature 'A user can add a recipe' do
   end
 
   scenario 'and filling up the form' do
-    visit '/recipes/new'
-    fill_in :title, with: 'Pesto alla genovese'
-    fill_in :description, with: '300 gr of basilico'
+    visit '/'
+    create_recipe("Pesto alla genovese", "300 gr of basilico", "this is the description", ['sauce', 'Italy'])
+    expect(Recipe.count).to eq(1)
+    recipe = Recipe.first
+    expect(recipe.title).to eq("Pesto alla genovese")
+    expect(recipe.ingredients).to eq("300 gr of basilico")
+    expect(recipe.description).to eq("this is the description")
+  end
+
+  scenario "with a few tags" do
+    visit "/"
+    create_recipe("Pesto alla genovese", "300 gr of basilico", "this is the description", ['sauce', 'Italy'])
+    recipe = Recipe.first
+    expect(recipe.tags.map(&:text)).to include("sauce")
+    expect(recipe.tags.map(&:text)).to include("Italy")
   end
 
 end
