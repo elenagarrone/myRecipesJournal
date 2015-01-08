@@ -1,1 +1,10 @@
+body header {
+  height: 60px;
+  background-color: rgb(223, 223, 223);
+  border-bottom-color: 1px grey;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
 
+body header a { display: inline-block; }
+
+body header form { display: inline; }
