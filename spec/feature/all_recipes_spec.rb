@@ -14,3 +14,12 @@ feature 'A user sees all the recipes available' do
   end
 
 end
+
+feature 'A user can add a recipe' do
+
+  scenario 'when opening the homepage' do
+    visit '/'
+    expect(page).to have_link 'Add Recipe'
+  end
+
+end

@@ -9,11 +9,13 @@
   </head>
   <body>
     <body>
+      
+        <a href='#'>Add Recipe</a>
 
       <% if current_user %>
         Welcome, <%= current_user.email %>
       <% end %>
-      
+
       <%= yield %>
     <script type="text/javascript" src="./js/interface.js"></script>
   </body>
