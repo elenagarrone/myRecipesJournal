@@ -77,5 +77,9 @@ post '/session' do
     flash[:error] = ["Ether email or password is incorrect"]
     erb :'session/new'
   end
+end
 
+delete '/sessions' do
+  session.clear
+  erb :'session/delete'
 end

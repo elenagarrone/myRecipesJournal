@@ -2,6 +2,8 @@ require 'spec_helper'
 require_relative 'helpers/recipe_helper'
 require_relative 'helpers/tags_helper'
 
+include TagHelpers; include RecipeHelpers;
+
 feature 'A user sees all the recipes available' do
 
   before(:each) {

@@ -1,6 +1,8 @@
 require 'spec_helper'
 require_relative 'helpers/user_helper'
 
+include UserHelpers
+
 feature "User signs up" do
 
   scenario "when a new user visit the site" do
@@ -42,6 +44,23 @@ feature "User signs in" do
     visit '/'
     expect(page).not_to have_content("Welcome, test@test.com")
     sign_in('test@test.com', 'wrong')
+    expect(page).not_to have_content("Welcome, test@test.com")
+  end
+
+end
+
+feature 'User signs out' do
+
+  before(:each) do
+    User.create(:email => "test@test.com",
+    :password => 'testtest',
+    :password_confirmation => 'testtest')
+  end
+
+  scenario 'while being signed in' do
+    sign_in('test@test.com', 'testtest')
+    click_button "Sign out"
+    expect(page).to have_content("Thank you for visiting!")
     expect(page).not_to have_content("Welcome, test@test.com")
   end
 
