@@ -1,8 +1,8 @@
 <h1>Please sign up to myRecipesJournal</h1>
 
 <form action="/users" method="post">
-  Email:</br> <input name="email" type="text"></br>
+  Email:</br> <input name="email" type="text" value="<%= @user.email %>"></br>
   Password:</br> <input name="password" type="password"></br>
-  And again:</br> <input name="password_confirmation" type="password"></br> 
+  And again:</br> <input name="password_confirmation" type="password"></br>
   <input type="submit" value="Sign up">
 </form>
