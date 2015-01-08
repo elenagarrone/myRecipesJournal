@@ -12,6 +12,15 @@
       <input type="hidden" name="_method" value="delete">
       <input type="submit" value="Sign out">
     </form>
+  <% else %>
+    <% if @sign_up %>
+      <a href='/session/new'>Sign in</a>
+    <% elsif @sign_in %>
+      <a href='/users/new'>Sign up</a>
+    <% else %>
+      <a href='/users/new'>Sign up</a>
+      <a href='/session/new'>Sign in</a>
+    <% end %>
   <% end %>
 
 </header>

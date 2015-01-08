@@ -1,4 +1,5 @@
 get '/session/new' do
+  @sign_in = true
   erb :'session/new'
 end
 
