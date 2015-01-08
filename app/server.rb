@@ -25,3 +25,14 @@ post '/users' do
   session[:user_id] = user.id
   redirect to '/'
 end
+
+get '/recipes/new' do
+  erb :'recipes/new'
+end
+
+post '/recipes' do
+  Recipe.create(:title => params[:title],
+  :ingredients => params[:ingredients],
+  :description => params[:description])
+  redirect to '/'
+end

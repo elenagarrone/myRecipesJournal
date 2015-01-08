@@ -4,6 +4,7 @@ class Recipe
 
   property :id,     Serial
   property :title,  String
+  property :ingredients, Text
   property :description, Text
 
 end
