@@ -1,5 +1,6 @@
 require 'spec_helper'
 require_relative 'helpers/recipe_helper'
+require_relative 'helpers/tags_helper'
 
 feature 'A user sees all the recipes available' do
 
@@ -24,8 +25,13 @@ feature 'A user sees all the recipes available' do
     expect(page).to have_content 'Pesto alla genovese'
   end
 
-  scenario 'for the same tag' do
-    visit '/tags/sauce'
+  scenario 'by saerching the tag' do
+    search_tags('sauce')
+    expect(current_path).to eq '/tags'
+  end
+
+  scenario 'with the same tag' do
+    search_tags('sauce')
     expect(page).to have_content 'Pesto alla genovese'
     expect(page).to have_content 'Ragu alla bolognese'
     expect(page).not_to have_content 'Melanzane grigliate'
@@ -47,7 +53,7 @@ feature 'A user can add a recipe' do
     expect(page).to have_content 'Enter a new recipe:'
   end
 
-  scenario 'and filling up the form' do
+  scenario 'by filling up the form' do
     visit '/'
     create_recipe("Pesto alla genovese", "300 gr of basilico", "this is the description", ['sauce', 'Italy'])
     expect(Recipe.count).to eq(1)

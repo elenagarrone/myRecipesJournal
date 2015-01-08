@@ -46,8 +46,8 @@ post '/recipes' do
   redirect to '/'
 end
 
-get '/tags/:text' do
-  tag = Tag.first(:text => params[:text])
+get '/tags' do
+  tag = Tag.first(:text => params[:search_tags])
   @recipes = tag ? tag.recipes : []
-  erb :index
+  erb :'index'
 end
