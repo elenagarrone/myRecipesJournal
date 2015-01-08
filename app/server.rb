@@ -61,3 +61,16 @@ get '/tags' do
   @recipes = tag ? tag.recipes : []
   erb :'index'
 end
+
+get '/session/new' do
+  erb :'session/new'
+end
+
+post '/session' do
+  email = params[:email]
+  password = params[:password]
+  user = User.authenticate(email, password)
+  session[:user_id] = user.id
+  redirect to('/')
+
+end

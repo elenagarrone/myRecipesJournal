@@ -22,3 +22,20 @@ feature "User signs up" do
   end
 
 end
+
+feature "User signs in" do
+
+  before(:each) do
+    User.create(:email => "test@test.com",
+    :password => 'testtest',
+    :password_confirmation => 'testtest')
+  end
+
+  scenario 'when visiting the site' do
+    visit '/'
+    expect(page).not_to have_content "Welcome, test@test.com"
+    sign_in('test@test.com', 'testtest')
+    expect(page).to have_content "Welcome, test@test.com"
+  end
+
+end
