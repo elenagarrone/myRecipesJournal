@@ -5,14 +5,30 @@ feature 'A user sees all the recipes available' do
 
   before(:each) {
     Recipe.create(:title => 'Pesto alla genovese',
-    :ingredients => '300 gr of basilico',
-    :description => 'this is the description')
+                  :ingredients => '300 gr of basilico',
+                  :description => 'this is the description',
+                  :tags => [Tag.first_or_create(:text => 'sauce')])
+    Recipe.create(:title => 'Ragu alla bolognese',
+                  :ingredients => '300 gr of mince beef',
+                  :description => 'this is the description',
+                  :tags => [Tag.first_or_create(:text => 'sauce')])
+    Recipe.create(:title => 'Grilled eggplants',
+                  :ingredients => '300 gr of eggplants',
+                  :description => 'this is the description',
+                  :tags => [Tag.first_or_create(:text => 'vegetable')])
   }
 
   scenario 'when opening the homepage' do
     visit '/'
     expect(page).to have_content 'myRecipesJournal'
     expect(page).to have_content 'Pesto alla genovese'
+  end
+
+  scenario 'for the same tag' do
+    visit '/tags/sauce'
+    expect(page).to have_content 'Pesto alla genovese'
+    expect(page).to have_content 'Ragu alla bolognese'
+    expect(page).not_to have_content 'Melanzane grigliate'
   end
 
 end
