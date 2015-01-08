@@ -1,9 +1,14 @@
 <header>
 
-  <form id="tags" method="get" action="/tags">
-    <input name="search_tags" type="text">
-    <input type="submit" value="Search">
-  </form>
+  <section class='logo'>
+    <h1>myRecipesJournal</h1>
+  </section>
+  <section class='search_tags'>
+    <form id="tags" method="get" action="/tags">
+      <input name="search_tags" type="text">
+      <input id='search_tags' type="submit" value="Search">
+    </form>
+  </section>
 
   <% if current_user %>
     Welcome, <%= current_user.email %>
