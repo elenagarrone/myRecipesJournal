@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative 'helpers/user_helper'
 
 feature "User signs up" do
 
@@ -8,12 +9,8 @@ feature "User signs up" do
     expect(User.first.email).to eq("test@test.com")
   end
 
-  def sign_up(email = "test@test.com",
-    password = "testtest")
-    visit '/users/new'
-    fill_in :email, :with => email
-    fill_in :password, :with => password
-    click_button "Sign up"
+  scenario 'with a wrong password' do
+    expect{ sign_up('test@test.com', 'testtest', 'wrong') }.to change(User, :count).by(0)
   end
 
 end
