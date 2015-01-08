@@ -1,4 +1,4 @@
-class Recipes
+class Recipe
 
   include DataMapper::Resource
 
