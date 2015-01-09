@@ -1,7 +1,13 @@
 body {
   background-color: #f2992e;
+  color: #f2992e;
+  font-family: helvetica;
 }
 
+
+/*=======================
+        HEADER
+=======================*/
 body header {
   height: 70px;
   padding: 0px 15px 0px 15px;
@@ -79,3 +85,47 @@ body header article.search_tags form#tags input#search {
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+
+/*=====================
+        INDEX
+=====================*/
+body ul { list-style-type: none; }
+
+body section.recipes {
+  background-color: #ffffff;
+  width: 75%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+}
+
+section.twitter_frame_main {
+  text-align: center;
+  left: 77%;
+  height: 100%;
+  position: absolute;
+  width: 21%;
+}
+
+section article.twitter_frame { 
+  width: 185px; 
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

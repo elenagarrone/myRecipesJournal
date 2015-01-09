@@ -1,11 +1,21 @@
-<ul>
-  <% @recipes.each do |recipe| %>
-    <li>
-      <h2><%= recipe.title %></h2>
-      <p><%= recipe.ingredients %></p>
-      <p><%= recipe.description %></p>
-    </li>
-  <% end %>
-</ul>
+<section class='recipes'>
+	<ul>
+	  <% @recipes.each do |recipe| %>
+	    <li>
+	      <h2><%= recipe.title %></h2>
+	      <p><%= recipe.ingredients %></p>
+	      <p><%= recipe.description %></p>
+	    </li>
+	  <% end %>
+	</ul>
+</section>
 
-<a class="twitter-timeline" href="https://twitter.com/recipes" data-widget-id="553550267787272192">Tweets by @recipes</a>
+<section class='twitter_frame_main'>
+	<article class='twitter_frame'>
+		<a class="twitter-timeline" href="https://twitter.com/recipes" data-widget-id="553550267787272192">Tweets by @recipes</a>
+	</article>
+	<article class='twitter_frame'>
+		<a class="twitter-timeline" href="https://twitter.com/BestRecipesUK" data-widget-id="553609084973613056">Tweets by @BestRecipesUK</a>
+	</article>
+</section>
+
