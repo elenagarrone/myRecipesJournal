@@ -99,10 +99,9 @@ body section.recipes {
   position: absolute;
 }
 
-section.twitter_frame_main {
+section.widgets {
   text-align: center;
   left: 77%;
-  height: 100%;
   position: absolute;
   width: 21%;
 }
@@ -110,11 +109,14 @@ section.twitter_frame_main {
 section article.twitter_frame { 
   width: 185px; 
   display: inline-block;
-  padding: 0px 5px 0px 5px;
+  padding: 5px 5px 5px 5px;
 }
 
-
-
+article#my_container {
+  width: 95%;
+  margin: 20px 0px 70px 0px;
+  display: inline-block;
+}
 
 
 
