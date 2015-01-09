@@ -1,14 +1,6 @@
 <header>
 
-  <section class='logo'>
-    <a href='/'>myRecipesJournal</a>
-  </section>
-  <section class='search_tags'>
-    <form id="tags" method="get" action="/tags">
-      <input name="search_tags" type="text">
-      <input id='search_tags' type="submit" value="Search">
-    </form>
-  </section>
+  <a class='logo' href='/'>myRecipesJournal</a>
 
   <% if current_user %>
     Welcome, <%= current_user.email %>
@@ -23,9 +15,17 @@
     <% elsif @sign_in %>
       <a href='/users/new'>Sign up</a>
     <% else %>
-      <a href='/users/new'>Sign up</a>
-      <a href='/session/new'>Sign in</a>
+      <article class='user_mngmt'>
+        <a class='user_mngmt sign_in' href='/session/new'>Log in</a>
+        <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
+      </article>
     <% end %>
   <% end %>
+
+  <article class='search_tags'>
+    <form id="tags" method="get" action="/tags">
+      <input id='search' name="search_tags" type="text" placeholder='Search tag'>
+    </form>
+  </article>
 
 </header>
