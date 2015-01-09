@@ -10,16 +10,16 @@
       <input type="submit" value="Sign out">
     </form>
   <% else %>
-    <% if @sign_up %>
-      <a href='/session/new'>Sign in</a>
-    <% elsif @sign_in %>
-      <a href='/users/new'>Sign up</a>
-    <% else %>
-      <article class='user_mngmt'>
-        <a class='user_mngmt sign_in' href='/session/new'>Log in</a>
+    <article class='user_mngmt'>
+      <% if @sign_up %>
+        <a class='user_mngmt sign_in' href='/session/new'>Sign in</a>
+      <% elsif @sign_in %>
         <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
-      </article>
-    <% end %>
+      <% else %>
+          <a class='user_mngmt sign_in' href='/session/new'>Log in</a>
+          <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
+      <% end %>
+    </article>
   <% end %>
 
   <article class='search_tags'>

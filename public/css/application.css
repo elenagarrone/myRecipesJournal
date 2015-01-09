@@ -52,7 +52,7 @@ body header article.search_tags {
   position: absolute;
   font-size: 21px;
   top: 19px;
-  left: 40%;
+  left: 43%;
 }
 
 body header article.search_tags form#tags input#search {
