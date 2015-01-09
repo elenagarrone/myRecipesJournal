@@ -4,7 +4,7 @@ end
 
 post '/recipes' do
   title = params[:title]
-  ingredients = params[:ingredients]
+  ingredients = params[:ingredients].gsub(', ', '   •')
   description = params[:description]
   tags = params["tags"].split(" ").map do |tag|
     Tag.first_or_create(:text => tag)
