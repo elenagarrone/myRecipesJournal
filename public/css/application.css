@@ -3,7 +3,7 @@ body {
   color: #ffffff;
   font-family: helvetica;
   position: relative;
-  min-width: 930px;
+  min-width: 1055px;
 }
 
 /*=======================
@@ -22,6 +22,7 @@ body header a.logo {
   font-size: 2em;
   color: white;
   line-height: 70px;
+  margin: 0px 25px 0px 0px;
 }
 
 body header section.user_sign_out {
@@ -30,13 +31,18 @@ body header section.user_sign_out {
   display: inline-flex;
 }
 
+body header section.user_sign_out article.welcome {
+  line-height: 30px;
+  margin: 0px 10px 0px 10px;
+}
+
 body header article.user_mngmt_container {
   float: right;
   display: inline-block;
   margin: 19px 0px 0px 0px;
 }
 
-body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt {
+body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt, a.add_recipe {
   height: 32px;
   line-height: 22px;
   padding: 4px 7px 5px 7px;
@@ -59,6 +65,14 @@ body header article.user_mngmt_container a.user_mngmt.sign_in {
 .sign_up {
   background-color: #ffffff;
   color: #f2992e;
+}
+
+a.add_recipe {
+  border: 1px solid #A8202B;
+  background-color: #A8202B;
+  color: #FFFFFF;
+  position: absolute;
+  margin: 19px 0px 0px 0px;
 }
 
 body header article.search_tags {
@@ -170,7 +184,6 @@ section article.twitter_frame {
   padding: 5px 5px 5px 5px;
 }
 
-
 /*---------------------------
       FAT SECRET WIDGET
 ___________________________*/
@@ -218,11 +231,6 @@ article#my_container {
   padding: 1px 5px 1px 5px;
 }
 
-.fatsecret_home_search_input:focus {
-  outline: none;
-  border: 1px solid #ffffff;
-}
-
 .fatsecret_foodsearch_search_input {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgb(242, 153, 46);
@@ -231,7 +239,7 @@ article#my_container {
   padding: 1px 5px 1px 5px;
 }
 
-.fatsecret_foodsearch_search_input:focus {
+.fatsecret_foodsearch_search_input:focus, .fatsecret_home_search_input:focus {
   outline: none;
   border: 1px solid #ffffff;
 }

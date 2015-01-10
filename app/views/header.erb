@@ -3,8 +3,8 @@
   <a class='logo' href='/'>myRecipesJournal</a>
 
     <% if current_user %>
+        <a class='add_recipe' href='recipes/new'>Add Recipe</a>
       <section class='user_sign_out'>
-        <a href='recipes/new'>Add Recipe</a>
         <article class='welcome'>
           Welcome, <%= current_user.email %>
         </article>
