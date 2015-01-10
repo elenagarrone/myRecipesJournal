@@ -2,26 +2,29 @@
 
   <a class='logo' href='/'>myRecipesJournal</a>
 
-
-  <% if current_user %>
-    Welcome, <%= current_user.email %>
-    <a href='recipes/new'>Add Recipe</a>
-    <form method="post" action="/sessions">
-      <input type="hidden" name="_method" value="delete">
-      <input type="submit" value="Sign out">
-    </form>
-  <% else %>
-    <article class='user_mngmt'>
-      <% if @sign_up %>
-        <a class='user_mngmt sign_in' href='/session/new'>Sign in</a>
-      <% elsif @sign_in %>
-        <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
-      <% else %>
+    <% if current_user %>
+      <section class='user_sign_out'>
+        <a href='recipes/new'>Add Recipe</a>
+        <article class='welcome'>
+          Welcome, <%= current_user.email %>
+        </article>
+        <form method="post" action="/sessions">
+          <input type="hidden" name="_method" value="delete">
+          <input class='user_mngmt sign_up' type="submit" value="Sign out">
+        </form>
+      </section>
+    <% else %>
+      <article class='user_mngmt_container'>
+        <% if @sign_up %>
+          <a class='user_mngmt sign_in' href='/session/new'>Sign in</a>
+        <% elsif @sign_in %>
+          <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
+        <% else %>
           <a class='user_mngmt sign_in' href='/session/new'>Log in</a>
           <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
-      <% end %>
-    </article>
-  <% end %>
+        <% end %>
+      </article>
+    <% end %>
 
   <article class='search_tags'>
     <form id="tags" method="get" action="/tags">

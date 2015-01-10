@@ -24,13 +24,19 @@ body header a.logo {
   line-height: 70px;
 }
 
-body header article.user_mngmt {
+body header section.user_sign_out {
+  float: right;
+  margin: 19px 0px 0px 0px;
+  display: inline-flex;
+}
+
+body header article.user_mngmt_container {
   float: right;
   display: inline-block;
   margin: 19px 0px 0px 0px;
 }
 
-body header article.user_mngmt a.user_mngmt {
+body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt {
   height: 32px;
   line-height: 22px;
   padding: 4px 7px 5px 7px;
@@ -44,13 +50,13 @@ body header article.user_mngmt a.user_mngmt {
   font-size: 13px;
 }
 
-body header article.user_mngmt a.user_mngmt.sign_in {
+body header article.user_mngmt_container a.user_mngmt.sign_in {
   background-color: rgba(255, 255, 255, 0.3);
   color: #ffffff;
   margin: 0px 6px 0px 0px;
 }
 
-body header article.user_mngmt a.user_mngmt.sign_up {
+.sign_up {
   background-color: #ffffff;
   color: #f2992e;
 }
