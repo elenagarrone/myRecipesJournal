@@ -1,14 +1,18 @@
-<section class='recipes'>
-	<article class='recipes_content'>
-		  <% @recipes.each do |recipe| %>
-			    <article class='recipe_title'>
-			      <h2><%= recipe.title %></h2>
-			     </article>
-		      <p id='ingredients'><%= recipe.ingredients %></p>
-		      <p id='description'><%= recipe.description %></p>
-		  <% end %>
-	</article>
-</section>
+<% if !@recipes.empty? %>
+	<% @recipes.each do |recipe| %>
+		<section class='recipes'>
+			<article class='recipes_content'>
+		    <article class='recipe_title'>
+		      <h2><%= recipe.title %></h2>
+		     </article>
+	      <p id='ingredients'><%= recipe.ingredients %></p>
+	      <p id='description'><%= recipe.description %></p>
+			</article>
+		</section>
+	<% end %>
+<% else %>
+	<h1>No recipes yet</h1>
+<% end %>
 
 <section class='widgets'>
 	<article class='twitter_frame'>
