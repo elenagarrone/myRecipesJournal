@@ -191,7 +191,7 @@ ___________________________*/
 
 article#my_container {
   width: 95%;
-  margin: 20px 0px 70px 0px;
+  margin: 6px 0px 70px 0px;
   display: inline-block;
   color: #ffffff;
 }
@@ -244,6 +244,8 @@ article#my_container {
   outline: none;
   border: 1px solid #ffffff;
 }
+
+.fatsecret_footer { display: none; }
 
 
 
