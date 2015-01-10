@@ -99,6 +99,16 @@ body header article.search_tags form#tags input#search:focus {
         INDEX
 =====================*/
 
+body section.no_recipes {
+  width: 75%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  top: 300px;
+}
+
 body section.recipes {
   width: 75%;
   height: 100%;
