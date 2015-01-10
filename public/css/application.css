@@ -4,7 +4,6 @@ body {
   font-family: helvetica;
 }
 
-
 /*=======================
         HEADER
 =======================*/
@@ -40,6 +39,7 @@ body header article.user_mngmt a.user_mngmt {
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
+  font-size: 13px;
 }
 
 body header article.user_mngmt a.user_mngmt.sign_in {
@@ -59,15 +59,22 @@ body header article.search_tags {
   font-size: 21px;
   top: 19px;
   left: 43%;
+  width: 12%;
+  min-width: 130px;
 }
 
 body header article.search_tags form#tags input#search {
   color: #ffffff;
   background-color: #f2992e;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 235px;
+  width: 100%;
   padding: 8px 7px 8px 7px;
   font-size: 15px;
+}
+
+body header article.search_tags form#tags input#search:focus {
+  outline: none;
+  border: 1px solid #ffffff;
 }
 
 ::-webkit-input-placeholder {
@@ -92,11 +99,11 @@ body header article.search_tags form#tags input#search {
 body ul { list-style-type: none; }
 
 body section.recipes {
-  background-color: #ffffff;
   width: 75%;
   height: 100%;
   display: inline-block;
   position: absolute;
+  color: #ffffff;
 }
 
 section.widgets {
@@ -156,8 +163,13 @@ article#my_container {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgb(242, 153, 46);
   height: 22px;
-  width: 180px;
+  width: 43%;
   padding: 1px 5px 1px 5px;
+}
+
+.fatsecret_home_search_input:focus {
+  outline: none;
+  border: 1px solid #ffffff;
 }
 
 .fatsecret_foodsearch_search_input {
@@ -168,7 +180,10 @@ article#my_container {
   padding: 1px 5px 1px 5px;
 }
 
-
+.fatsecret_foodsearch_search_input:focus {
+  outline: none;
+  border: 1px solid #ffffff;
+}
 
 
 
