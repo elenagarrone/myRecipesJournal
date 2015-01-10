@@ -2,6 +2,9 @@ body {
   background-color: #f2992e;
   color: #f2992e;
   font-family: helvetica;
+  position: relative;
+  min-width: 930px;
+}
 }
 
 /*=======================
@@ -96,7 +99,6 @@ body header article.search_tags form#tags input#search:focus {
 /*=====================
         INDEX
 =====================*/
-body ul { list-style-type: none; }
 
 body section.recipes {
   width: 75%;
@@ -115,12 +117,14 @@ section.recipes article.recipes_content {
   border-radius: 5px;
   border: 1px solid rgb(232, 232, 232);
   text-align: justify;
+  min-width: 160px;
 }
 
 section.recipes article.recipes_content article.recipe_title {
   text-align: center;
   border-bottom: 1px solid rgb(232, 232, 232);
   padding: 10px 10px 10px 10px;
+  color: rgb(168, 32, 43);
 }
 
 section.recipes article.recipes_content p#ingredients {
