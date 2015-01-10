@@ -1,15 +1,15 @@
 <% if !@recipes.empty? %>
-	<% @recipes.each do |recipe| %>
-		<section class='recipes'>
-			<article class='recipes_content'>
-		    <article class='recipe_title'>
-		      <h2><%= recipe.title %></h2>
-		     </article>
-	      <p id='ingredients'><%= recipe.ingredients %></p>
-	      <p id='description'><%= recipe.description %></p>
-			</article>
-		</section>
-	<% end %>
+	<section class='recipes'>
+		<% @recipes.each do |recipe| %>
+				<article class='recipes_content'>
+			    <article class='recipe_title'>
+			      <h2><%= recipe.title %></h2>
+			     </article>
+		      <p id='ingredients'><%= recipe.ingredients %></p>
+		      <p id='description'><%= recipe.description %></p>
+				</article>
+		<% end %>
+	</section>
 <% else %>
 	<section class='no_recipes'>
 			<h1>No recipes yet</h1>

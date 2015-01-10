@@ -130,23 +130,23 @@ body section.no_recipes {
 }
 
 body section.recipes {
-  width: 75%;
-  height: 100%;
-  display: inline-block;
+  width: 67%;
   position: absolute;
   color: #f2992e;
+  margin: 35px 0px 0px 90px;
+  padding: 0px 0px 50px 0px;
 }
 
 section.recipes article.recipes_content {
-  width: 20%;
+  width: 22%;
   height: 300px;
   background-color: #ffffff;
-  display: inline-block;
   margin: 0px 15px 15px 15px;
   border-radius: 5px;
   border: 1px solid rgb(232, 232, 232);
   text-align: justify;
   min-width: 160px;
+  float: left;
 }
 
 section.recipes article.recipes_content article.recipe_title {
@@ -173,9 +173,10 @@ section.recipes article.recipes_content article.recipe_title h2 {
 
 section.widgets {
   text-align: center;
-  left: 77%;
+  left: 75%;
   position: absolute;
   width: 21%;
+  margin: 30px 0px 0px 0px;
 }
 
 section article.twitter_frame { 
