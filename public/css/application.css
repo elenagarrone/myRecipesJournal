@@ -103,7 +103,39 @@ body section.recipes {
   height: 100%;
   display: inline-block;
   position: absolute;
-  color: #ffffff;
+  color: #f2992e;
+}
+
+section.recipes article.recipes_content {
+  width: 20%;
+  height: 300px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 0px 15px 15px 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(232, 232, 232);
+  text-align: justify;
+}
+
+section.recipes article.recipes_content article.recipe_title {
+  text-align: center;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  padding: 10px 10px 10px 10px;
+}
+
+section.recipes article.recipes_content p#ingredients {
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  font-style: italic;
+}
+
+section.recipes article.recipes_content p#description {
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+section.recipes article.recipes_content article.recipe_title h2 {
+  margin: 0px 0px 0px 0px;
 }
 
 section.widgets {
