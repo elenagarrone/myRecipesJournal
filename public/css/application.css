@@ -244,6 +244,7 @@ section article.twitter_frame {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .sign_up_page .sign_up.button {
@@ -326,12 +327,6 @@ article#my_container {
 }
 
 .fatsecret_footer { display: none; }
-
-
-/*------------------------
-DISPLAY FOR JQUERY
-------------------------*/
-
 
 
 
