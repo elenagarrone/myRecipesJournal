@@ -12,9 +12,7 @@ h4 {
 }
 
 p { line-height: 20px; }
-/*=======================
-        HEADER
-=======================*/
+
 body header {
   height: 70px;
   padding: 0px 15px 0px 15px;
@@ -48,7 +46,7 @@ body header article.user_mngmt_container {
   margin: 19px 0px 0px 0px;
 }
 
-body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt, .add_recipe, input.sign_up.button, input.sign_in.button {
+body header .user_mngmt, .add_recipe, input.sign_up.button, input.sign_in.button {
   height: 32px;
   line-height: 22px;
   padding: 4px 7px 5px 7px;
@@ -112,6 +110,18 @@ input.search_not_visible {
 
 .input_text.search { margin: 0 }
 
+.input_text.ingredients {
+  height: 70px;
+}
+
+.input_text.description {
+  height: 100px;
+}
+
+.input_text.recipe {
+  width: 445px;
+}
+
 .input_text:focus {
   outline: none;
   border: 1px solid #ffffff;
@@ -132,22 +142,6 @@ input.search_not_visible {
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
-.input_text.ingredients {
-  height: 70px;
-}
-
-.input_text.description {
-  height: 100px;
-}
-
-.input_text.recipe {
-  width: 445px;
-}
-
-/*=====================
-        INDEX
-=====================*/
 
 body section.no_recipes {
   width: 75%;
@@ -179,12 +173,20 @@ section.recipes article.recipes_content {
   float: left;
 }
 
+section.recipes article.recipe_title { 
+  overflow: scroll;
+  line-height: 31px;
+  height: 28px; 
+}
+
 section.recipes article.recipes_content article.recipe_title {
   text-align: center;
   border-bottom: 1px solid rgb(232, 232, 232);
   padding: 10px 10px 10px 10px;
   color: rgb(168, 32, 43);
 }
+
+section.recipes article.recipes_content h2 { font-size: 20px; }
 
 article.recipe_description {
   height: 159px;
