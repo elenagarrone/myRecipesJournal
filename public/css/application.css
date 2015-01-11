@@ -48,7 +48,7 @@ body header article.user_mngmt_container {
   margin: 19px 0px 0px 0px;
 }
 
-body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt, a.add_recipe, input.sign_up.button, input.sign_in.button {
+body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt, .add_recipe, input.sign_up.button, input.sign_in.button {
   height: 32px;
   line-height: 22px;
   padding: 4px 7px 5px 7px;
@@ -73,7 +73,7 @@ body header section.user_sign_out .sign_up, article.user_mngmt_container .user_m
   color: #f2992e;
 }
 
-a.add_recipe {
+.add_recipe {
   border: 1px solid #A8202B;
   background-color: #A8202B;
   color: #FFFFFF;
@@ -106,7 +106,10 @@ input.input_text {
   width: 100%;
   padding: 8px 7px 8px 7px;
   font-size: 15px;
+  margin: 6px 0px 6px 0px;
 }
+
+.input_text.search { margin: 0 }
 
 input.input_text:focus {
   outline: none;
@@ -213,15 +216,15 @@ section article.twitter_frame {
   padding: 5px 5px 5px 5px;
 }
 
-.sign_form {
+.sign_form, .new_recipe {
   text-align: center;
 }
 
-.sign_form h1 {
+.sign_form h1, .new_recipe h2 {
   margin: 115px 0px 0px 0px;
 }
 
-.sign_form article.sign_up_page {
+.sign_form article.sign_up_page, .new_recipe article.recipe_form {
   width: 230px;
   left: 43%;
   position: absolute;
@@ -239,7 +242,9 @@ section article.twitter_frame {
   height: 34px;
 }
 
-.sign_up_page form .input_text.sign {
+.recipe_form .add_recipe.button {
+  padding: 0px 77.5px 0px 77.5px;
+  position: relative;
   margin: 6px 0px 6px 0px;
 }
 

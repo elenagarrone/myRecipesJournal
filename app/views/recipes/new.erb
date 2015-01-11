@@ -1,8 +1,13 @@
-<h2>Enter a new recipe:</h2>
-<form id='new_recipe'action="/recipes" method="post">
-  Title:</br> <input type="text" name="title"></br>
-  Ingredients:</br> <textarea name='ingredients'></textarea></br>
-  Description:</br> <textarea name='description'></textarea></br>
-  Tags: <input type="text" name="tags">
-  <input type="submit" value="Submit Recipe">
-</form>
+<section class='new_recipe'>
+	<h2>Enter a new recipe:</h2>
+
+	<article class='recipe_form'>
+		<form id='new_recipe'action="/recipes" method="post">
+		  <input class='input_text' type="text" name="title" placeholder='Dish name' ></br>
+		  <textarea name='ingredients' placeholder='Ingredients (each ingredient must be followed by a comma)' ></textarea></br>
+		  </br> <textarea name='description' placeholder='Method' ></textarea></br>
+		  <input class='input_text' type="text" name="tags" placeholder='Tags' >
+		  <input class='add_recipe button' type="submit" value="Submit Recipe">
+		</form>
+	</article>
+</section>
