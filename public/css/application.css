@@ -1,9 +1,15 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   background-color: #f2992e;
   color: #ffffff;
   font-family: helvetica;
   position: relative;
   min-width: 1055px;
+  min-height: 625px;
 }
 
 h4 {
@@ -234,12 +240,11 @@ section article.twitter_frame {
 .sign_form article.sign_up_page, .new_recipe article.recipe_form {
   text-align: center;
   width: 500px;
-  left: 36.5%;
+  left: 50%;
   position: absolute;
-  top: 250px;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.new_recipe article.recipe_form { top: 185px; }
 
 .sign_up_page .sign_up.button {
   margin: 6px 0px 6px 0px;
