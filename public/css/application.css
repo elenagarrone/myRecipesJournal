@@ -87,7 +87,7 @@ body header article.search_tags {
   font-size: 21px;
   top: 19px;
   left: 43%;
-  width: 12%;
+  width: 225px;
   min-width: 130px;
 }
 
@@ -229,7 +229,7 @@ section article.twitter_frame {
   text-align: center;
 }
 
-.sign_form h1, .new_recipe h2 {
+.sign_form h2, .new_recipe h2 {
   margin: 115px 0px 0px 0px;
 }
 
@@ -237,10 +237,8 @@ section article.twitter_frame {
   width: 230px;
   left: 43%;
   position: absolute;
-  top: 300px;
+  top: 250px;
 }
-
-.new_recipe article.recipe_form { top: 250px; }
 
 .sign_up_page .sign_up.button {
   margin: 6px 0px 6px 0px;
