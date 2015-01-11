@@ -244,11 +244,12 @@ section article.twitter_frame {
 .sign_up_page .sign_up.button {
   margin: 6px 0px 6px 0px;
   padding: 0px 108.5px 0px 108.5px;
+  height: 34px;
 }
 
 .sign_up_page .sign_in.button {
   margin: 6px 0px 6px 0px;
-  padding: 0px 100.5px 0px 100.5px;
+  padding: 0px 110.5px 0px 110.5px;
   height: 34px;
 }
 
