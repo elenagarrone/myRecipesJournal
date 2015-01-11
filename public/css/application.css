@@ -99,7 +99,7 @@ input.search_not_visible {
   outline: none;
 }
 
-input.input_text {
+.input_text {
   color: #ffffff;
   background-color: #f2992e;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -107,11 +107,12 @@ input.input_text {
   padding: 8px 7px 8px 7px;
   font-size: 15px;
   margin: 6px 0px 6px 0px;
+  resize: none;
 }
 
 .input_text.search { margin: 0 }
 
-input.input_text:focus {
+.input_text:focus {
   outline: none;
   border: 1px solid #ffffff;
 }
@@ -130,6 +131,14 @@ input.input_text:focus {
 
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.input_text.ingredients {
+  height: 70px;
+}
+
+.input_text.ingredients {
+  height: 100px;
 }
 
 /*=====================
@@ -231,6 +240,8 @@ section article.twitter_frame {
   top: 300px;
 }
 
+.new_recipe article.recipe_form { top: 250px; }
+
 .sign_up_page .sign_up.button {
   margin: 6px 0px 6px 0px;
   padding: 0px 98.5px 0px 98.5px;
@@ -246,6 +257,10 @@ section article.twitter_frame {
   padding: 0px 77.5px 0px 77.5px;
   position: relative;
   margin: 6px 0px 6px 0px;
+}
+.new_recipe h2 {
+  position: absolute;
+  left: 42%;
 }
 
 /*---------------------------
