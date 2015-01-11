@@ -42,7 +42,7 @@ body header article.user_mngmt_container {
   margin: 19px 0px 0px 0px;
 }
 
-body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt, a.add_recipe {
+body header section.user_sign_out .sign_up, article.user_mngmt_container .user_mngmt, a.add_recipe, input.sign_up.button {
   height: 32px;
   line-height: 22px;
   padding: 4px 7px 5px 7px;
@@ -197,9 +197,24 @@ section article.twitter_frame {
   text-align: center;
 }
 
-.sign_form form {
-  display: inline-block;
-  width: 13%;
+.sign_form h1 {
+  margin: 115px 0px 0px 0px;
+}
+
+.sign_form article.sign_up_page {
+  width: 230px;
+  left: 43%;
+  position: absolute;
+  top: 300px;
+}
+
+.sign_up_page .sign_up.button {
+  margin: 6px 0px 6px 0px;
+  padding: 0px 98.5px 0px 98.5px;
+}
+
+.sign_up_page form .input_text.sign {
+  margin: 6px 0px 6px 0px;
 }
 
 /*---------------------------

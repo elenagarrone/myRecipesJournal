@@ -1,10 +1,12 @@
 <section class='sign_form'>
 	<h1>Please sign up to myRecipesJournal</h1>
 
-	<form action="/users" method="post">
-	  Email:</br> <input class='input_text' name="email" type="text" value="<%= @user.email %>"></br>
-	  Password:</br> <input class='input_text' name="password" type="password"></br>
-	  And again:</br> <input class='input_text' name="password_confirmation" type="password"></br>
-	  <input type="submit" value="Sign up">
-	</form>
+	<article class='sign_up_page'>	
+		<form action="/users" method="post">
+		  <input class='input_text sign' name="email" type="text" value="<%= @user.email %>" placeholder='Email address' ></br>
+		  <input class='input_text sign' name="password" type="password" placeholder='Password' ></br>
+		  <input class='input_text sign' name="password_confirmation" type="password" placeholder='Password confirmation' ></br>
+		  <input class='sign_up button' type="submit" value="Sign up">
+		</form>
+	</article>
 </section>
