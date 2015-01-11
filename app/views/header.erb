@@ -3,7 +3,9 @@
   <a class='logo' href='/'>myRecipesJournal</a>
 
     <% if current_user %>
-        <a class='add_recipe' href='recipes/new'>Add Recipe</a>
+    
+      <a class='add_recipe' href='recipes/new'>Add Recipe</a>
+
       <section class='user_sign_out'>
         <article class='welcome'>
           Welcome, <%= current_user.email %>
@@ -13,7 +15,9 @@
           <input class='user_mngmt sign_up' type="submit" value="Sign out">
         </form>
       </section>
+
     <% else %>
+
       <article class='user_mngmt_container'>
         <% if @sign_up %>
           <a class='user_mngmt sign_in' href='/session/new'>Sign in</a>
@@ -24,6 +28,7 @@
           <a class='user_mngmt sign_up' href='/users/new'>Sign up</a>
         <% end %>
       </article>
+
     <% end %>
 
   <article class='search_tags'>
