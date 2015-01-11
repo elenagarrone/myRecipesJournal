@@ -6,6 +6,12 @@ body {
   min-width: 1055px;
 }
 
+h4 {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 0px 10px;
+}
+
+p { line-height: 20px; }
 /*=======================
         HEADER
 =======================*/
@@ -164,13 +170,27 @@ section.recipes article.recipes_content article.recipe_title {
   color: rgb(168, 32, 43);
 }
 
-section.recipes article.recipes_content p#ingredients {
-  padding: 10px 10px 10px 10px;
+article.recipe_description {
+  height: 159px;
+  overflow: scroll;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  border-top: 1px solid rgb(232, 232, 232);
+}
+
+article.recipe_ingredients {
+  height: 80px;
+  overflow: scroll;
+}
+
+p#ingredients {
+  word-wrap: break-word;
+  padding: 10px 10px 20px 10px;
   margin: 0px 0px 0px 0px;
   font-style: italic;
 }
 
-section.recipes article.recipes_content p#description {
+p#description {
+  word-wrap: break-word;
   padding: 10px 10px 10px 10px;
   margin: 0px 0px 0px 0px;
 }

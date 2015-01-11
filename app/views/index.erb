@@ -4,9 +4,16 @@
 				<article class='recipes_content'>
 			    <article class='recipe_title'>
 			      <h2><%= recipe.title %></h2>
-			     </article>
-		      <p id='ingredients'><%= recipe.ingredients %></p>
-		      <p id='description'><%= recipe.description %></p>
+			    </article>
+			    <article class='recipe_ingredients'>
+				    <h4>Ingredients:</h4>
+			      <p id='ingredients'><%= recipe.ingredients %></p>
+		      </article>
+
+		      <article class='recipe_description'>
+			      <h4>Method:</h4>
+			      <p id='description'><%= recipe.description %></p>
+			    </article>
 				</article>
 		<% end %>
 	</section>
