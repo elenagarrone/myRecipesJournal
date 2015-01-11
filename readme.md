@@ -1,14 +1,12 @@
-[![Code Climate](https://codeclimate.com/github/elenagarrone/bookmark_manager/badges/gpa.svg)](https://codeclimate.com/github/elenagarrone/bookmark_manager)
-[![Test Coverage](https://codeclimate.com/github/elenagarrone/bookmark_manager/badges/coverage.svg)](https://codeclimate.com/github/elenagarrone/bookmark_manager)
+[![Code Climate](https://codeclimate.com/github/elenagarrone/myRecipesJournal/badges/gpa.svg)](https://codeclimate.com/github/elenagarrone/myRecipesJournal)
+[![Test Coverage](https://codeclimate.com/github/elenagarrone/myRecipesJournal/badges/coverage.svg)](https://codeclimate.com/github/elenagarrone/myRecipesJournal)
 
 myRecipesJournal
 ================
 
-During week four we built a bookmark manager, similar to pineapple.io or delicious.com in spirit. A bookmark manager is a good use case for exploring how relational databases work.
+This is a recipes journal built using Ruby and Sinatra after Makers Academy.
 <img src='public/images/homepage.png'>
-<img src='public/images/sign_in.png'>
-<img src='public/images/sign_up.png'>
-<img src='public/images/add_recipe.png'>
+
 
 Technologies:
 ------------
