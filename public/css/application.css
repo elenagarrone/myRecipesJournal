@@ -137,8 +137,12 @@ input.search_not_visible {
   height: 70px;
 }
 
-.input_text.ingredients {
+.input_text.description {
   height: 100px;
+}
+
+.input_text.recipe {
+  width: 445px;
 }
 
 /*=====================
@@ -225,14 +229,6 @@ section article.twitter_frame {
   padding: 5px 5px 5px 5px;
 }
 
-.new_recipe {
-  text-align: center;
-}
-
-.new_recipe h2 {
-  margin: 115px 0px 0px 0px;
-}
-
 .sign_form article.sign_up_page, .new_recipe article.recipe_form {
   text-align: center;
   width: 500px;
@@ -240,6 +236,8 @@ section article.twitter_frame {
   position: absolute;
   top: 250px;
 }
+
+.new_recipe article.recipe_form { top: 185px; }
 
 .sign_up_page .sign_up.button {
   margin: 6px 0px 6px 0px;
@@ -254,13 +252,10 @@ section article.twitter_frame {
 }
 
 .recipe_form .add_recipe.button {
-  padding: 0px 77.5px 0px 77.5px;
+  padding: 0px 184.5px 0px 184.5px;
   position: relative;
   margin: 6px 0px 6px 0px;
-}
-.new_recipe h2 {
-  position: absolute;
-  left: 42%;
+  height: 34px;
 }
 
 /*---------------------------
