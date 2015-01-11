@@ -85,7 +85,15 @@ body header article.search_tags {
   min-width: 130px;
 }
 
-body header article.search_tags form#tags input#search {
+input.search_not_visible {
+  border: none;
+  background-color: rgb(242, 153, 46);
+  color: rgb(242, 153, 46);
+  cursor: auto;
+  outline: none;
+}
+
+input.input_text {
   color: #ffffff;
   background-color: #f2992e;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -94,7 +102,7 @@ body header article.search_tags form#tags input#search {
   font-size: 15px;
 }
 
-body header article.search_tags form#tags input#search:focus {
+input.input_text:focus {
   outline: none;
   border: 1px solid #ffffff;
 }
@@ -183,6 +191,15 @@ section article.twitter_frame {
   width: 185px; 
   display: inline-block;
   padding: 5px 5px 5px 5px;
+}
+
+.sign_form {
+  text-align: center;
+}
+
+.sign_form form {
+  display: inline-block;
+  width: 13%;
 }
 
 /*---------------------------

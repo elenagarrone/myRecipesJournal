@@ -36,7 +36,7 @@ feature 'A user sees all the recipes available' do
     search_tags('sauce')
     expect(page).to have_content 'Pesto alla genovese'
     expect(page).to have_content 'Ragu alla bolognese'
-    expect(page).not_to have_content 'Melanzane grigliate'
+    expect(page).not_to have_content 'Grilled eggplants'
   end
 
 end
