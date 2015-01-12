@@ -90,9 +90,10 @@ body header article.search_tags {
   position: absolute;
   font-size: 21px;
   top: 19px;
-  left: 43%;
-  width: 225px;
+  left: 50%;
+  width: 266px;
   min-width: 130px;
+  transform: translate(-50%);
 }
 
 input.search_not_visible {
@@ -168,7 +169,7 @@ body section.recipes {
 }
 
 section.recipes article.recipes_content {
-  width: 22%;
+  width: 21%;
   height: 300px;
   background-color: #ffffff;
   margin: 0px 15px 15px 15px;
@@ -179,10 +180,10 @@ section.recipes article.recipes_content {
   float: left;
 }
 
-section.recipes article.recipe_title { 
+section.recipes article.recipe_title {
   overflow: scroll;
   line-height: 31px;
-  height: 28px; 
+  height: 28px;
 }
 
 section.recipes article.recipes_content article.recipe_title {
@@ -231,8 +232,8 @@ section.widgets {
   margin: 30px 0px 0px 0px;
 }
 
-section article.twitter_frame { 
-  width: 185px; 
+section article.twitter_frame {
+  width: 185px;
   display: inline-block;
   padding: 5px 5px 5px 5px;
 }
@@ -327,7 +328,3 @@ article#my_container {
 }
 
 .fatsecret_footer { display: none; }
-
-
-
-
