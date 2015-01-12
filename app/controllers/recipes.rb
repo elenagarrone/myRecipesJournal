@@ -3,17 +3,6 @@ get '/recipes/new' do
 end
 
 post '/recipes' do
-  title = params[:title]
-  ingredients = params[:ingredients].gsub(', ', '   •')
-  description = params[:description]
-  tags = params["tags"].split(" ").map do |tag|
-    Tag.first_or_create(:text => tag)
-  end
-
-  Recipe.create(:title => title,
-  :ingredients => ingredients,
-  :description => description,
-  :tags => tags)
-
+  Recipe.create_from_params(params)
   redirect to '/'
 end
