@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/user/Projects/myRecipesJournal/app/server.rb": [
+      "/home/elena/projects/myRecipesJournal/app/server.rb": [
         1,
         1,
         1,
@@ -18,18 +18,18 @@
         1,
         1,
         1,
-        133
+        151
       ],
-      "/Users/user/Projects/myRecipesJournal/app/helpers/app.rb": [
+      "/home/elena/projects/myRecipesJournal/app/helpers/app.rb": [
         1,
         null,
         1,
-        54,
+        63,
         null,
         null,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/datamapper_setup.rb": [
+      "/home/elena/projects/myRecipesJournal/app/datamapper_setup.rb": [
         1,
         1,
         null,
@@ -40,7 +40,7 @@
         1,
         1
       ],
-      "/Users/user/Projects/myRecipesJournal/app/models/user.rb": [
+      "/home/elena/projects/myRecipesJournal/app/models/user.rb": [
         1,
         null,
         1,
@@ -55,15 +55,17 @@
         1,
         null,
         1,
+        1,
+        1,
         null,
         1,
-        13,
-        13,
+        16,
+        16,
         null,
         null,
         1,
-        8,
-        8,
+        9,
+        9,
         7,
         null,
         null,
@@ -72,7 +74,7 @@
         null,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/models/recipe.rb": [
+      "/home/elena/projects/myRecipesJournal/app/models/recipe.rb": [
         1,
         null,
         1,
@@ -86,7 +88,7 @@
         null,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/models/tag.rb": [
+      "/home/elena/projects/myRecipesJournal/app/models/tag.rb": [
         1,
         null,
         1,
@@ -98,13 +100,13 @@
         null,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/controllers/app.rb": [
+      "/home/elena/projects/myRecipesJournal/app/controllers/app.rb": [
         1,
-        17,
-        17,
+        18,
+        18,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/controllers/recipes.rb": [
+      "/home/elena/projects/myRecipesJournal/app/controllers/recipes.rb": [
         1,
         3,
         null,
@@ -125,22 +127,22 @@
         2,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/controllers/session.rb": [
+      "/home/elena/projects/myRecipesJournal/app/controllers/session.rb": [
         1,
-        8,
-        8,
+        9,
+        9,
         null,
         null,
         1,
-        8,
-        8,
-        8,
-        8,
+        9,
+        9,
+        9,
+        9,
         7,
         7,
         null,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         null,
@@ -149,34 +151,34 @@
         1,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/controllers/tags.rb": [
+      "/home/elena/projects/myRecipesJournal/app/controllers/tags.rb": [
         1,
         2,
         2,
         2,
         null
       ],
-      "/Users/user/Projects/myRecipesJournal/app/controllers/users.rb": [
+      "/home/elena/projects/myRecipesJournal/app/controllers/users.rb": [
         1,
-        4,
-        4,
-        4,
+        6,
+        6,
+        6,
         null,
         null,
         1,
-        4,
+        6,
         null,
         null,
-        4,
-        2,
-        2,
+        6,
+        3,
+        3,
         null,
-        2,
-        2,
+        3,
+        3,
         null,
         null
       ]
     },
-    "timestamp": 1421011272
+    "timestamp": 1421066092
   }
 }

@@ -23,6 +23,12 @@ feature "User signs up" do
     expect(page).to have_content "Email is already taken"
   end
 
+  scenario 'with a password which is not long enough' do
+    expect{ sign_up }.to change(User, :count).by(1)
+    expect{ sign_up('test@test.com', 'test', 'test') }.to change(User, :count).by(0)
+    expect(page).to have_content "Password must be between 8 and 10 characters long"
+  end
+
 end
 
 feature "User signs in" do
@@ -45,6 +51,11 @@ feature "User signs in" do
     expect(page).not_to have_content("Welcome, test@test.com")
     sign_in('test@test.com', 'wrong')
     expect(page).not_to have_content("Welcome, test@test.com")
+  end
+
+  scenario 'with a blank or incorrect email' do
+    expect{ sign_in('test', 'testtest') }.to change(User, :count).by(0)
+    expect(page).to have_content "Either email or password is incorrect"
   end
 
 end

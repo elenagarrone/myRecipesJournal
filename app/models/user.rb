@@ -12,6 +12,8 @@ class User
   attr_accessor :password_confirmation
 
   validates_confirmation_of :password
+  validates_presence_of :email
+  validates_length_of :password, :within => 8..10
 
   def password=(password)
     @password = password
