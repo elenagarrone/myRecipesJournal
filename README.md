@@ -28,7 +28,6 @@ To do:
 -----
 - [ ] main page for the single recipe;
 - [ ] edit and delete button;
-- [ ] remove glow from some of the buttons;
 - [ ] profile page for the user;
 
 How to use:
