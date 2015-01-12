@@ -11,7 +11,7 @@ post '/session' do
     session[:user_id] = @user.id
     redirect to('/')
   else
-    flash[:error] = ["Ether email or password is incorrect"]
+    flash[:errors] = ["Either email or password is incorrect"]
     erb :'session/new'
   end
 end
