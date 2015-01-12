@@ -17,6 +17,15 @@ h4 {
   padding: 10px 0px 0px 10px;
 }
 
+h2.goodbye {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 p { line-height: 20px; }
 
 body header {
@@ -64,6 +73,7 @@ body header .user_mngmt, .add_recipe, input.sign_up.button, input.sign_in.button
   display: inline-block;
   box-sizing: border-box;
   font-size: 13px;
+  outline: none;
 }
 
 .sign_in {
