@@ -1,36 +1,33 @@
 <% if !@recipes.empty? %>
-	<section class='recipes'>
-		<% @recipes.each do |recipe| %>
-				<article class='recipes_content'>
-			    <article class='recipe_title'>
-			      <h2><%= recipe.title %></h2>
-			    </article>
-			    <article class='recipe_ingredients'>
-				    <h4>Ingredients:</h4>
-			      <p id='ingredients'><%= recipe.ingredients %></p>
-		      </article>
-
-		      <article class='recipe_description'>
-			      <h4>Method:</h4>
-			      <p id='description'><%= recipe.description %></p>
-			    </article>
-				</article>
-		<% end %>
-	</section>
+  <section class='recipes'>
+    <% @recipes.each do |recipe| %>
+      <article class='recipes_content'>
+        <article class='recipe_title'>
+          <h2><%= recipe.title %></h2>
+        </article>
+        <article class='recipe_ingredients'>
+          <h4>Ingredients:</h4>
+          <p id='ingredients'><%= recipe.ingredients %></p>
+        </article>
+        <article class='recipe_description'>
+          <h4>Method:</h4>
+          <p id='description'><%= recipe.description %></p>
+        </article>
+      </article>
+    <% end %>
+  </section>
 <% else %>
-	<section class='no_recipes'>
-			<h1>No recipes yet</h1>
-	</section>
+  <section class='no_recipes'>
+    <h1>No recipes yet</h1>
+  </section>
 <% end %>
 
 <section class='widgets'>
-	<article class='twitter_frame'>
-		<a class="twitter-timeline" href="https://twitter.com/recipes" data-widget-id="553550267787272192">Tweets by @recipes</a>
-	</article>
-	<article class='twitter_frame'>
-		<a class="twitter-timeline" href="https://twitter.com/BestRecipesUK" data-widget-id="553609084973613056">Tweets by @BestRecipesUK</a>
-	</article>
-
-	<article id="my_container" class="fatsecret_container" ></article>
+  <article class='twitter_frame'>
+    <a class="twitter-timeline" href="https://twitter.com/recipes" data-widget-id="553550267787272192">Tweets by @recipes</a>
+  </article>
+  <article class='twitter_frame'>
+    <a class="twitter-timeline" href="https://twitter.com/BestRecipesUK" data-widget-id="553609084973613056">Tweets by @BestRecipesUK</a>
+  </article>
+  <article id="my_container" class="fatsecret_container" ></article>
 </section>
-
